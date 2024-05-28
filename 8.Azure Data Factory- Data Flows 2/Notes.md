@@ -1,4 +1,4 @@
-![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/a3fe092c-2827-4987-a317-95410b0a6154)Continuation of Data Flow Notes, previous notes can be found [here](https://github.com/SandeepAnala1/AzureDataEnginnering_Notes/blob/main/7.Azure%20Data%20Factory-%20Data%20Flows%201/Notes.md)
+Continuation of Data Flow Notes, previous notes can be found [here](https://github.com/SandeepAnala1/AzureDataEnginnering_Notes/blob/main/7.Azure%20Data%20Factory-%20Data%20Flows%201/Notes.md)
 - Let's start with a question
 # Instead of using Mapdrifted is there a way to get columns without import projection?
 Ans: With byName you can dynamically use columns without Mapdrifted
