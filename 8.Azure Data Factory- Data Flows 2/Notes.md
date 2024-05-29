@@ -73,10 +73,16 @@ Here for Assert, it's description is important to get the error file into error 
 In Sink Activity error section, you'll find the Assert failure storage path
 ![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/fb671d37-0547-4d0a-bd6b-240e819e9825)
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # & Logic Apps !
 It is a service provided by Azure, used to integrate two different services
 
+Building a mini use case of Data Quality
+Use case:
+When there is some error in the data while we are working in data flows, we are handling it to sending it to the error container. So with the help of Logic Apps we need to send mail with attachment also about the error
 
+https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview
 
 
 
