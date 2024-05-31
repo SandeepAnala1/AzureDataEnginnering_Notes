@@ -56,7 +56,18 @@ Parallelism in software development, particularly in the context of version cont
 ![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/4b21dd4a-eb6a-40ed-8421-56aef4c3648f)
 
 
+# Configuring GIT in ADF
+### Step 1
+<img width="959" alt="image" src="https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/f72feded-7779-46c3-ace9-5ccb9e037e9b">
 
+### Step 2
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/7f117f66-5bea-4d18-9043-d16b982e1513)
 
+### Step 3
+- Under collaboration branch you can use any, either feature or main
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/6941b019-1f58-4a07-bc0a-cc3727eb34a8)
+
+### Step 4
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/948d154b-7601-49e4-bf3b-a03b72b16228)
 
 
