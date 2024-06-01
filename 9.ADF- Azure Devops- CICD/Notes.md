@@ -70,4 +70,78 @@ Parallelism in software development, particularly in the context of version cont
 ### Step 4
 ![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/948d154b-7601-49e4-bf3b-a03b72b16228)
 
+Branch policies in Azure DevOps (and other version control systems) are rules and configurations applied to branches to enforce quality and security standards. They help ensure that code changes meet certain criteria before being merged into the main or production branches. Here are key aspects of branch policies:
+
+## Branch Policies
+Branch policies in Azure DevOps provide a way to enforce consistent practices across your team and ensure high code quality. Key policies include:
+
+- **Pull Request Reviews**: Require pull requests to be reviewed and approved by one or more designated reviewers before merging. This helps catch potential issues and ensures adherence to coding standards.
+- **Build Validation**: Automatically trigger a build and run tests for the code in a pull request. The pull request can only be completed if the build succeeds and all tests pass, ensuring that new code doesn’t break the build.
+- **Minimum Number of Reviewers**: Specify a minimum number of reviewers that must approve a pull request before it can be merged. This policy increases the chances of catching bugs and maintaining code quality.
+- **Comment Resolution**: Require all comments in a pull request to be resolved before the request can be completed. This ensures that all feedback has been addressed.
+- **Work Item Linking**: Enforce that pull requests are linked to work items (e.g., tasks, bugs) before they can be merged. This helps in tracking changes and understanding the context behind code modifications.
+- **Branch Protection**: Prevent direct pushes to certain branches (e.g., `main` or `master`). All changes must go through a pull request process, ensuring that no unreviewed or untested code is introduced.
+
+## How to raise a Pull request?
+### Step 1: Create pull request
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/ad52c8f5-1fab-4a59-b246-ec9b349364d0)
+
+### Step 2: Add reviewers
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/8ba4e4fd-14a8-44f6-9aa3-b896036e3c56)
+
+### Step 3: Approve & Complete(Merge)
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/e9dc66d0-5bdf-4b9d-8192-836c5291df1e)
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/56e9c088-ecdd-4062-87d9-bfac7365d63b)
+
+### Addl: Revert the merge, we will not do in general
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/06aa7d0c-ccf0-446e-a541-6fadbe477a08)
+
+----------------------------------------------------------------
+
+## Git Mode
+In Git Mode, changes are made locally on a developer's machine and then committed to the repository. This mode leverages Git’s branching and version control features, allowing developers to work offline and merge changes back into the main codebase later.
+
+## Live Mode
+In Live Mode, changes are made directly on the live server or environment, often used for immediate updates. This mode does not involve local version control, posing risks to stability and traceability as changes are applied directly without prior review.
+
+# Significance of Live mode
+- Even though our code is in main branch, our code is not deployed into development instance. We can't schedule the pipelines or triggers.
+- So to do this code has to come to live mode
+
+### Workflow in general
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/804986a1-a253-4250-9c0c-6da3484a53f6)
+
+-------------------------------------------------------------------
+
+### Generic cycle of our code travelling in Ops
+- Develop our code in feature branch
+- Merge into Collaboration (Master/main)
+- Deploy code to Live mode in development instance
+    - Publish
+    - Build Pipeline
+- Deploy code to Live Mode in testing instance
+    - Release Pipeline
+- At last deploy code to Live Mode in production Instance
+    - Release Pipeline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
