@@ -125,8 +125,27 @@ In Live Mode, changes are made directly on the live server or environment, often
     - Release Pipeline
 
 ----------------------------------------------------------------------
+## Old  CI/CD flow
+1.	Each user makes changes in their private branches.
+2.	Push to master isn't allowed. Users must create a pull request to make changes.
+3.	Users must load the Data Factory UI and select Publish to deploy changes to Data Factory and generate the ARM templates in the publish branch.
+4.	The DevOps Release pipeline is configured to create a new release and deploy the ARM template each time a new change is pushed to the publish branch.
 
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/cd91bba5-28ea-454d-859e-ad2fca01feac)
 
+## The new CI/CD flow
+1.	Each user makes changes in their private branches.
+2.	Push to master isn't allowed. Users must create a pull request to make changes.
+3.	The Azure DevOps pipeline build is triggered every time a new commit is made to master. It validates the resources and generates an ARM template as an artifact if validation succeeds.
+4.	The DevOps Release pipeline is configured to create a new release and deploy the ARM template each time a new build is available.
+
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/1c30b441-dd00-45df-8111-8707d08393ee)
+
+## What changed?
+1.	We now have a build process that uses a DevOps build pipeline.
+2.	The build pipeline uses the ADFUtilities NPM package, which will validate all the resources and generate the ARM templates. These templates can be single and linked.
+3.	The build pipeline is responsible for validating Data Factory resources and generating the ARM template instead of the Data Factory UI (Publish button).
+4.	The DevOps release definition will now consume this new build pipeline instead of the Git artifact.
 
 
 
