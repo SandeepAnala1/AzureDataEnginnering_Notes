@@ -153,12 +153,46 @@ In Live Mode, changes are made directly on the live server or environment, often
 An NPM package is a bundle of code that can be easily shared and reused by others. It includes files and metadata (information about the package) that help developers use it in their projects. Think of it like a Lego set with instructions, so you can quickly build something useful without starting from scratch. NPM, which stands for Node Package Manager, is a tool that helps you find, install, and manage these packages for your JavaScript projects.
 
 
+## Assignment : Build pipeline for the development Azure Data Factory. Automatically triggered on completion of a pull request and merge to main branch. Validates the Data Factory resources. Generates the ARM template and publishes for consumption via Release pipeline
+[click here to get the YML file](https://github.com/SandeepAnala1/AzureDataFactory_Notes/blob/8045f9e71176e6b6250b63764d7d6c62b021a5a0/9.ADF-%20Azure%20Devops-%20CICD/adf-ci-option-2-build-pipeline.yml])
+
+----------------------------------------------------------
+# Pipelines (CI/CD)
+
+The term "pipeline" is used in both Azure DevOps and Azure Data Factory (ADF), but they serve different purposes and are used in different contexts.
+
+### Azure DevOps Pipelines
+
+**Azure DevOps Pipelines** is a tool used for Continuous Integration (CI) and Continuous Deployment (CD). It automates the process of building, testing, and deploying your code. Here's what you typically do with Azure DevOps Pipelines:
+
+1. **Build Pipeline**: Compile your source code into executable files.
+2. **Test Pipeline**: Run automated tests to ensure the code works as expected.
+3. **Release Pipeline**: Deploy the built and tested code to different environments (e.g., development, staging, production).
+
+Azure DevOps Pipelines help streamline the development process, ensuring that code changes are automatically tested and deployed, reducing the risk of errors and speeding up the delivery of new features.
+
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/f7fb6a91-437f-4760-974a-0c2dfee8385c)
 
 
+# Release
 
+Don't click on create release, instead click on new release pipeline
+1. Start with an empty job
+2. Give a stage name(Dev, test, prod)
+3. We get two sections (Artifacts & Stages)
+4. Artifacts are the ARM templates because of the below flow
 
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/d2ad5378-155d-4bd0-9270-edd6ea659804)
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/a5c8b3d4-0c55-47f5-91ce-6c54f8b40176)
 
+5. Add artifact, select project, source(build pipeline)\
+6. You can find trigger
 
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/53d96e4b-16d0-44f0-b422-ea8f73a35e77)
+
+7. Click on job inside the stage, you can find Agent job
+8. Click on plus and find ARM template deployment
+9. Fill in the details
 
 
 
