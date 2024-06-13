@@ -148,6 +148,9 @@ In Live Mode, changes are made directly on the live server or environment, often
 4.	The DevOps release definition will now consume this new build pipeline instead of the Git artifact.
 
 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+### NPM package
+An NPM package is a bundle of code that can be easily shared and reused by others. It includes files and metadata (information about the package) that help developers use it in their projects. Think of it like a Lego set with instructions, so you can quickly build something useful without starting from scratch. NPM, which stands for Node Package Manager, is a tool that helps you find, install, and manage these packages for your JavaScript projects.
 
 
 
