@@ -9,7 +9,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: ubuntu-latest # Creates a Virtual Machine
 
 variables:
   subscriptionId: '5d626b70-9b96-4e4c-86d3-459e12945dd5'  # Use your subscription ID
@@ -20,7 +20,7 @@ variables:
 
 steps:
 
-# Installs Node 
+# Installs Node # A technology which is majorly used for web services development & in ADF it is used to generate ARM template
 - task: NodeTool@0
   inputs:
     versionSpec: '14.x'
