@@ -198,13 +198,13 @@ Don't click on create release, instead click on new release pipeline
 11. Click dropdown and choose resourcegroup. Else, for every other resourcegroup we are providing the access which is wrong.
 12. Click on OK, it creates a Service principle and assign a contributer by itself
 13. Add Action as Create or update resource group
-14. Add addl fields
+14. Add addl fields    
 
 
 
 
 
-
+    
 
 
 
