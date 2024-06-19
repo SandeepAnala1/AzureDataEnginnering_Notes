@@ -193,6 +193,41 @@ Don't click on create release, instead click on new release pipeline
 7. Click on job inside the stage, you can find Agent job
 8. Click on plus and find ARM template deployment
 9. Fill in the details
+10. Select deployment scope, Azure Resource Manager Connection, Subsciption & action
+![image](https://github.com/SandeepAnala1/AzureDataFactory_Notes/assets/163712602/1071bb3f-63b7-4329-ba12-73b995090d05)
+11. Click dropdown and choose resourcegroup. Else, for every other resourcegroup we are providing the access which is wrong.
+12. Click on OK, it creates a Service principle and assign a contributer by itself
+13. Add Action as Create or update resource group
+14. Add addl fields
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
