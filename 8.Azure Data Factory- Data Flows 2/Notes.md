@@ -1,3 +1,13 @@
+# Index
+- [Transformations resumed](#transformations-resumed)
+- [ROW_NUMBER vs RANK vs DENSE_RANK](#row_number-vs-rank-vs-dense_rank)
+- [Data Quality Check](#data-quality-check)
+- [Logic Apps!](#-logic-apps-)
+
+
+
+
+
 Continuation of Data Flow Notes, previous notes can be found [here](https://github.com/SandeepAnala1/AzureDataEnginnering_Notes/blob/main/7.Azure%20Data%20Factory-%20Data%20Flows%201/Notes.md)
 - Let's start with a question
 # Instead of using Mapdrifted is there a way to get columns without import projection?
