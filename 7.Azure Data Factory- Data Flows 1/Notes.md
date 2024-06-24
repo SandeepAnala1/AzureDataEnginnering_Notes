@@ -1,3 +1,14 @@
+# Index
+- [Mapping Data Flows](#what-are-mapping-data-flows)
+- [DataFlow Definition](#dataflow-definition)
+- [Narrow Partition and Wide Partition](#narrow-partition-and-wide-partition)
+- [UI](#ui)
+- [Data Flow Use Case](#lets-learn-data-flow-with-a-usecase)
+  - [Data Ingestion](#1data-ingestion)
+  - [Transformation](#2transformation)
+  - [Data Flow](#3dataflow)
+
+
 # What are mapping data flows?
         
 > #### Layman
