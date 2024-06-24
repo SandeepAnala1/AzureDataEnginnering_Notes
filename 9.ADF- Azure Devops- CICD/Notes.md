@@ -1,3 +1,14 @@
+# Index
+- [Introduction](#cicd-continuous-integration-and-continuous-deliverydeployment)
+- [Configuring GIT in ADF](#configuring-git-in-adf)
+- [Branch Policies](#branch-policies)
+- [How to raise a Pull request?](#how-to-raise-a-pull-request)
+- [Generic cycle of our code travelling in Ops](#generic-cycle-of-our-code-travelling-in-ops)
+- [Old CI/CD flow](#old--cicd-flow)
+- [The new CI/CD flow](#the-new-cicd-flow)
+- [Pipelines (CI/CD)](#pipelines-cicd)
+
+
 # CI/CD (continuous integration and continuous delivery/deployment)
 Why not Continous Development & Continous deployment?
 Think abt it
